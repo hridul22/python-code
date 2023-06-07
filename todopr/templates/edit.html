@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<div class="card text-white bg-success mb-3" style="max-width: 18rem;" xmlns="http://www.w3.org/1999/html">
+    <div class="card-header">
+        <div class="card-title">
+            <h4>UPDATE TASK</h4>
+        </div>
+        <div class="card-body">
+
+            <form method="POST">
+                 {% csrf_token %}
+                 {{form.as_p}}
+                <button class="btn btn-warning">UPDATE</button>
+            </form>>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<!--<form method="POST">-->
+<!--    {% csrf_token %}-->
+<!--    {{f.as_p}}-->
+<!--    <input type="submit">-->
+<!--</form>>-->
+{% endblock %}
